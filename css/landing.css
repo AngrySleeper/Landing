@@ -1,0 +1,211 @@
+@font-face {
+	font-family: 'Cambria';
+	src: url('fonts/Cambria.eot');
+	src: local('☺'), url('fonts/Cambria.woff') format('woff'), url('fonts/Cambria.ttf') format('truetype'), url('fonts/Cambria.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+.banner {
+  display: flex;
+  position: relative;
+  max-width: 1920px;
+  height: 1080px;
+  background: url("../img/landing/bg.jpg") 0 0 no-repeat;
+}
+
+.character {
+  left: 30px;
+}
+
+.sparks {
+  margin-right: 1100px;
+}
+
+.banner .sparks img {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  animation: animate calc(8s * var(--i)) linear infinite;
+}
+
+.logo {
+  position: relative;
+  left: 70px;
+  top: 960px;
+  z-index: 9999;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.offer {
+  visibility: hidden;
+  width: 50%;
+  position: relative;
+  padding-top: 250px;
+}
+
+.discount {
+  font-family: "Cambria";
+  font-size: 200px;
+  font-weight: bold;
+  color:#fff;
+}
+
+.discount-text {
+  position: relative;
+  font-family: "Cambria";
+  font-size: 63px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#fff;
+}
+
+.discount-form {
+  align-items: center;
+  justify-content: center;
+}
+
+.discount-code {
+  margin: 50px 0 0 38px;
+  width: 26%;
+  height: 67px;
+  padding-left: 29px;
+  background: none;
+  font-size: 35px;
+  letter-spacing: 4px;
+  color: #f73427;
+  border: 1px dashed rgba(255,255,255,0.3);
+  border-radius: 35px 0 0 35px;
+}
+
+.btn-copy {
+  position: absolute;
+  top: 572px;
+  left: 278px;
+  width: 23%;
+  height: 70px;
+  background: none;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-family: Arial;
+  text-transform: uppercase;
+  border: 1px dashed rgba(255,255,255,0.3);
+  border-radius: 0 35px 35px 0;
+}
+
+.get-it {
+  position: absolute;
+  top: 700px;
+  right: 400px;
+  width: 300px;
+  height: 60px;
+  background: #f73427;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+}
+
+.paragraph {
+  color: rgb(50,49,49);
+  position: absolute;
+  bottom: 45px;
+  right: 70px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1400px) {
+  .character {
+    left: 10px;
+  }
+  .sparks {
+    margin-right: 1000px;
+  }
+  .logo {
+    left: 50px;
+  }
+  .offer {
+    padding-top: 300px;
+  }
+  .discount {
+    font-size: 130px;
+  }
+  .discount-text {
+    font-size: 40px;
+  }
+  .discount-code {
+    margin: 50px 0 0 10px;
+    width: 35%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 18px;
+  }
+  .btn-copy {
+    top: 533px;
+    left: 170px;
+    width: 34%;
+    height: 54px;
+  }
+  .get-it {
+    top: 600px;
+    right: 110px;
+    width: 260px;
+    height: 50px;
+    background: #f73427;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .character {
+    left: -214px;
+  }
+  .sparks {
+    margin-right: 650px;
+  }
+  .discount {
+    font-size: 120px;
+  }
+  .discount-text {
+    font-size: 38px;
+  }
+  .discount-code {
+    margin: 30px 0 0 15px;
+    width: 35%;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+  }
+  .btn-copy {
+    top: 500px;
+    left: 166px;
+    width: 34%;
+    height: 54px;
+  }
+  .get-it {
+    top: 585px;
+    right: 112px;
+    width: 200px;
+    height: 40px;
+    background: #f73427;
+    font-size: 20px;
+  }
+}
